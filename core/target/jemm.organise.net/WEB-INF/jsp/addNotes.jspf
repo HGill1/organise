@@ -1,0 +1,48 @@
+<form:form id='addNotes' action="" modelAttribute="feedEntry">
+<fieldset>
+	<div>
+		Category : <select id="feedSourceId" name="feedSourceId">
+			<c:forEach var="feedCategory" items="${feedSources}">
+				<option value="${feedCategory.key}">${feedCategory.value.name}</option>
+			</c:forEach>
+		</select>
+	</div>
+	<div>
+		Campaign/Note Title:
+		<form:input path="name"
+			placeholder="Start typing Campaign name or title of your note…"
+			size="30" style="width: 26em" type="text" autocomplete="off" />
+
+	</div>
+	<div>
+
+		<form:textarea path="summary"
+			placeholder="Your note needs a sensible content. If you don't put a title, first part of your note will create the title anyway…"
+			rows="3" style="width: 99%;font:inherit;" />
+
+	</div>
+
+	<div>
+
+		<form:input path="url"
+			placeholder="Put here a URL you want to refer to and Journal will make it a link…"
+			size="30" style="width: 35em;" type="text" value="" />
+
+	</div>
+
+	<div>
+		<input type="checkbox" id="status" name="status"> Mark Status
+		as Urgent
+	</div>
+
+	<div></div>
+	<span id='filename'></span><br /> <a href='#' id='attach'>Add a
+		file</a><br /> <input id="upload" type="file" name="file"
+		data-url="attachFile.htm" multiple
+		style="opacity: 0; filter: alpha(opacity :   0);"><br /> <input
+		type='button' value='Reset' id='reset' /> <input type='submit'
+		value='submit' id='submit' />
+
+	 
+</fieldset>
+</form:form>

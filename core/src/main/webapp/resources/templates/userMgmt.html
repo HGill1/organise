@@ -1,0 +1,104 @@
+{{#users}}
+
+<div class="user-item-wrapper" data-control="userItemWrapper">
+                                            <div class="user-item clearFix">
+                                                <div class="user-item-left">
+                                                    <div class="user-item-content">
+					                         			<div id="usersInfoDiv" class="user-item-info">
+															<div class="user-item-image">
+																<img src="{{userProfileImage profileimage}}" height="56">
+															</div>
+															<div class="user-item-txt">
+																<h4 class="user-item-name">{{firstName}} {{lastName}}
+																	({{regionName}})</h4>
+										
+																<div class="user-item-note">{{jobTitle}}
+																
+																</div>
+															</div>
+														</div>
+                                                    </div>
+                                                </div>
+                                                <div class="user-item-right">
+                                                    <a href="#" class="updown-arrow" data-control="userBtn"><i class="icon-arrow-big"></i></a>
+                                                </div>
+                                            </div>
+
+                                            <div data-control="userDetails" class="user-details hide">
+										
+                                                    <div id="userButtonsDiv" class="form-inline-header">User manager 
+                                                    <span class="pull-right">
+															<button class="btn-small" id="{{userStatusButton roleId}}" type="button">
+																{{userStatusButtonText roleId}} <input type="hidden" id="disableUserId"
+																	value="{{id}}" name="disableUserId" />
+															</button>
+															<button class="btn-small" type="button" data-control="userDestroy">
+																delete user <input type="hidden" id="delUserId" value="{{id}}"
+																	name="delUserId" />
+															</button>
+															</span>
+                                                    </div>
+                                                    <div class="form-inline-content">
+
+                                                        <div class="form-line" id="userEmailDiv">
+                                                            <div class="label"><label>email: <strong><a href="mailto:{{email}}">{{email}}</a></strong></label></div>
+                                                        </div>
+                                                        <div class="user-item-separator"></div>
+
+                                                        <div class="form-line form-inline-fields" id="userRoleInfo">
+                                                       		<input type="hidden" id="userId" value="{{id}}"/>
+                                                            <div class="label"><label>User permission</label></div>
+                                                             {{#checkSuperAdmin ../user.roleId roleId ../roles}}
+                                                            	<div class="form-inline-header">Super Administrator </div>
+                                                            {{else}}
+			                                                   			 <select id="selRoleId" data-custom="true"> 
+										                                       <option value="0" >Assign Roles</option>
+										                                       {{#each ../../roles }}
+																		   				<option value="{{id}}" {{selectRole ../roleId id}}>{{name}}</option>
+																				{{/each}}    
+												               						
+							 											</select>
+		                                                   
+															{{/checkSuperAdmin}}
+															 
+                                                        </div>
+
+                                                    </div>
+                                                    
+                                                    {{#checkIfHasRole roleId}}
+	                                                    <div id="userDeptDiv" class="form-inline-footer">
+	                                                     <form action="" id="{{id}}" onsubmit="modifyUserDept({{id}});return false">
+	                                                    <input type="hidden" id="id" name="id" value="{{id}}"/>
+	                                                    <div class="float-left">
+	                                                                <div class="form-line">
+	                                                                    <div class="label"><label>Groups</label></div>
+	                                                                    <a class="user-add-permissions" href="#">Choose groups<span class="selectBox-arrow"></span></a>
+	                                                                    <div class="dept-dropdown dept-user-dropdown" data-control="deptDropdown">
+		                                                                     {{#each ../../depts}}
+		                                                                        <label class="user-add-permissions-item clearFix">
+		                                                                            <input class="user-permission-option" name="depts" value="{{id}}" {{selectedDept ../dept id}}  type="checkbox"/>
+		                                                                            <span class="user-permission-option-text  ">{{name}}</span>
+		                                                                        </label>
+		                                                                     {{/each}}
+		                                                                     <span class="arrowForDropdown"></span>
+	                                                                    </div>
+	                                                                </div>
+	                                                            </div>
+	                                                        <div style="float:left;margin-bottom:5px;">
+		                                                        <button data-control="userInfoSaveButton"  type="submit" class="btn-control create">
+		                                                            <span>Save Groups</span></button>
+		                                                         <a data-control="userInfoCancelButton" class="cancelBtn" href="#">CANCEL</a> 
+	                                                        </div>
+	                                                        </form>
+	                                                    </div>
+                                                    {{/checkIfHasRole}}
+                                                   
+                                            </div>
+
+
+                                        </div>
+                                        
+                                        
+{{/users}} 
+                                    
+

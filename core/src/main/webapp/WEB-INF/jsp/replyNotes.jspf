@@ -1,0 +1,51 @@
+<form:form id='replyNotes' action="" modelAttribute="feedEntry">
+		<fieldset>
+	<input type="hidden" id="parentId" name="parentId" />	
+	<input type="hidden" id="sourceId" name="sourceId" />	
+	<%-- <div>
+		Category : <select id="feedSourceId" name="feedSourceId">
+			<c:forEach var="feedCategory" items="${feedSources}">
+				<option value="${feedCategory.key}">${feedCategory.value.name}</option>
+			</c:forEach>
+		</select>
+	</div> --%>
+	<div>
+		Campaign/Note Title:
+		<input type ="text" id="replyName" name ="replyName" placeholder="Start typing Campaign name or title of your note…"
+			size="30" style="width: 26em" type="text" autocomplete="off" />
+
+	</div>
+	<div>
+
+		<textarea id="replySummary" name = "replySummary" placeholder="Your note needs a sensible content. If you don't put a title, first part of your note will create the title anyway…"
+			rows="3" style="width: 99%;font:inherit;" ></textarea>
+
+	</div>
+
+	<div>
+
+		<input type ="text" id ="replyUrl" name ="reply Url" 
+			placeholder="Put here a URL you want to refer to and Journal will make it a link…"
+			size="30" style="width: 35em;" />
+
+	</div>
+
+	<div>
+		Status : <select id="replyStatus" name="replyStatus">
+			<option value="0">Select Status </option>
+			<c:forEach var="s" items="${status}">				
+				<option value="${s.key}">${s.value.name}</option>
+			</c:forEach>
+		</select>
+	</div>
+
+	<div></div>
+	<span id='replyFilename'></span><br /> <a href='#' id='replyAttach'>Add a
+		file</a><br /> <input id="replyUpload" type="file" name="file"
+		data-url="attachFile.htm" multiple style="opacity: 0; filter: alpha(opacity :   0);" ><br /> <input
+		type='button' value='Reset' id='reset' /> <input type='submit'
+		value='submit' id='submit' />
+
+	<%-- <img src="<%="/home/images/images.jpg" %>" alt="Upload Image" /> --%>
+</fieldset>
+</form:form>

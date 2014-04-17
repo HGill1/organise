@@ -1,0 +1,78 @@
+<div data-control="replyForm" class="campaign-body-form hide">
+    <form:form id='replyNotes' action="" modelAttribute="feedEntry">
+    <input type="hidden" id="parentId" name="parentId" />
+	<input type="hidden" id="sourceId" name="sourceId" />
+	<input type="hidden" id="assignToId" name="assignToId"/>
+	<input type="hidden" id="taskAssignerEmail" name="taskAssignerEmail"/>
+	<input type="hidden" id="replyPostCommentEmailNotify" name="replyPostCommentEmailNotify"/>
+	<input type="hidden" id="replyAssignToName" name="replyAssignToName"/>
+	<input type="hidden" id="replyAssignerName" name="replyAssignerName"/>
+	<input type="hidden" id="replyTaskTitle" name="replyTaskTitle"/>
+	<input type="hidden" id="taskAssignerId" name="taskAssignerId"/>
+	<input type="hidden" id="taskAssignToEmail" name="taskAssignToEmail"/>
+	<input type="hidden" id="assignToDept" name="assignToDept"/>
+	<input id="replyUpload" type="file" name="file" data-url="attachFile.htm" multiple style="opacity: 0; filter: alpha(opacity :   0);">
+        <div class="comments-title-wr clearFix">
+            <span class="comments-title">Write your reply message here</span>
+            <span class="comments-title-attach"><a id="replyAttach" href="#"><i class="icon-attach"></i></a>
+            </span>
+            <div class="comments-title-status">Status: <span data-control="statusCurrent"><span class="status-item active"><i class="icon-on-it"></i> onit</span></span>
+                <div class="status-dropdown">
+                    <div class="status-arrow"></div>
+                    <span id="2" data-control="statusItem" class="status-item active"><i class="icon-on-it"></i> onit</span>
+                    <span id="3" data-control="statusItem" class="status-item"><i class="icon-pending"></i> pending</span>
+                    <span id="4" data-control="statusItem" class="status-item"><i class="icon-don"></i> done</span>
+                    <input type="hidden" value ="2" data-reply-status="onit" id="replyStatus" name = "replyStatus" >
+                 </div>
+            </div>
+        </div>
+        
+        <div id="replyAttachmentsCont" class="form-line">
+           <!--  <span class="form-attached"><span>image.png</span> <i class="icon-del"></i></span>&nbsp;
+            <span class="form-attached"><span>image.png</span> <i class="icon-del"></i></span> -->
+        </div>
+        
+        <div class="form-line">
+            <textarea class="textarea" id="replySummary" name = "replySummary" placeholder="Type comment here"></textarea>
+        </div>
+        
+		<!-- <div class="form-line clearFix">
+			    <input type="checkbox" id="replyUrgentStatus" name="replyUrgentStatus"> <label for="form2">Mark Status as Urgent</label>
+        </div> -->
+        <div class="form-line clearFix">
+            <div class="float-left replyFloatContainer">
+                 <input type="checkbox" id="replyUrgentStatus" name="replyUrgentStatus">
+                <label for="replyUrgentStatus">Mark Status as Urgent</label>
+            </div>
+            <div class="float-right clearFix" id="reassignTaskBlock">
+                <label for="assignTask">Reassign task to:</label>
+                <input id="assignTask" type="text" class="field reassignWidth" placeholder="Type employee name" data-selected-item-id="">
+                <input type="hidden" id="reassignerId" />
+                <div id="assignTaskAutocompleteCrutch" class="autocompleteCrutch">
+                    <div class="autocompleteContainer" data-autocomplete-target="assignTask">
+                         <div class="autocompleteGroupContainer" id="reassignDept">
+                            <span class="autocompleteGroupTitle">Select Group</span>
+                            <c:forEach var="aDept" items="${allDeptsWithUsers}">
+                           		 <span class="autocompleteItem" data-dept-name="${aDept.name}" data-item-id ="d${aDept.id}">${aDept.name}</span>
+                            </c:forEach>
+                        </div> 
+                        <div class="autocompleteGroupContainer" id="reassigneeDetail">
+                            <span class="autocompleteGroupTitle">Select Assignee</span>
+                             <c:forEach var="user" items="${users}">
+                            <span class="autocompleteItem"  data-assignee-name="${user.firstName} ${user.lastName}" data-item-id ="${user.id}#${user.email}#${user.taskAddEmail}#${user.firstName} ${user.lastName}">${user.firstName} ${user.lastName}</span>
+                            
+                             </c:forEach>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="form-line btns">
+            <button type="button"  id="replySubmitButton" class="btn-control reply">
+                <span>Submit</span>
+            </button>
+            <a id="replyCancel" class="cancelBtn" data-control="hideReply" href="#">CANCEL</a>
+        </div>
+    </form:form>
+</div>

@@ -1,0 +1,784 @@
+
+CREATE DATABASE `organise18apr` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci; 
+
+
+
+update users set region_id = 2 where id=78;
+update users set region_id = 3 where id=190;
+update users set region_id = 5 where id=193;
+update users set region_id = 5 where id=194;
+update users set region_id = 1 where id=387;
+update users set region_id = 1 where id=390;
+update users set region_id = 1 where id=507;
+
+Done
+
+alter table feed_entries add column main_status tinyint(1) DEFAULT '0' after updated_at
+
+
+
+20 Sept 2012
+
+
+delete from users;
+
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (1 ,'Matt', 'mwhaley@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (2 ,'Jonathan', 'jdespinidic@jemmgroup.com', 'pass','','',5);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (3 ,'Jo', 'jwhaley@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (4 ,'Sam', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (5 ,'George', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (6 ,'Louise', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (7 ,'Michael', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (8 ,'Martin', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (9 ,'Dean', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (10 ,'Linda', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (11 ,'Gemma', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (12 ,'Siobhan', 'jemm@jemmgroup.com', 'pass','','',4);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (13 ,'Alex', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (14 ,'Mark', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (15 ,'Chris', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (16 ,'Dheeraj', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (17 ,'Dave', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (18 ,'Michael', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (19 ,'Ryan', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (20 ,'Brian', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (21 ,'Harjinder', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (22 ,'Try', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (23 ,'caroline', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (24 ,'Julia', 'jemm@jemmgroup.com', 'pass','','',1);
+
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (25 ,'Manuel', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (26 ,'Laurie', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (27 ,'Keith', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (28 ,'Siobhan1', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (29 ,'Elaine', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (30 ,'Nelly', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (31 ,'Lily', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (32 ,'Seb', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (33 ,'Lisa', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (34 ,'David', 'jemm@jemmgroup.com', 'pass','','',1);
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (35 ,'Chamari', 'jemm@jemmgroup.com', 'pass','','',1);
+
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (36 ,'Dima', 'jemm@jemmgroup.com', 'pass','','',1);
+
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (37 ,'Anton', 'jemm@jemmgroup.com', 'pass','','',1);
+
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (38 ,'Georges', 'jemm@jemmgroup.com', 'pass','','',3);
+
+
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id,First_name,Last_name)
+values (39 ,'matts', 'msteffenson@jemmgroup.com', 'b5cef2407c4a00bf5fc288b925f35065d3b632733d4c8d21a38bfae88c5c9a5bffaef493185235e7fe8bbf47f487c12bf83fe50f7e9d731727d52a1db6af37d1','VZGugcS5DkhEbfa5a809','5936e164508f8c0b41862750c6cd94e24f34b93087b7cc8c7edaaf67fb0b7b5cc16e19fd7bb2efa3690a309bc691275ab74874a338abcf3091032981e08205ee',5,'Matt','Steffenson');
+
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id,First_name,Last_name)
+values (40 ,'Stuart', 'msteffenson@jemmgroup.com', 'b5cef2407c4a00bf5fc288b925f35065d3b632733d4c8d21a38bfae88c5c9a5bffaef493185235e7fe8bbf47f487c12bf83fe50f7e9d731727d52a1db6af37d1','VZGugcS5DkhEbfa5a809','5936e164508f8c0b41862750c6cd94e24f34b93087b7cc8c7edaaf67fb0b7b5cc16e19fd7bb2efa3690a309bc691275ab74874a338abcf3091032981e08205ee',1,'Stuart','Broadhurst');
+
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id,First_name,Last_name)
+values (40 ,'Stuart', 'msteffenson@jemmgroup.com', 'b5cef2407c4a00bf5fc288b925f35065d3b632733d4c8d21a38bfae88c5c9a5bffaef493185235e7fe8bbf47f487c12bf83fe50f7e9d731727d52a1db6af37d1','VZGugcS5DkhEbfa5a809','5936e164508f8c0b41862750c6cd94e24f34b93087b7cc8c7edaaf67fb0b7b5cc16e19fd7bb2efa3690a309bc691275ab74874a338abcf3091032981e08205ee',1,'Stuart','Broadhurst');
+
+
+
+
+
+update users set username = 'Michael1' where id = 7;
+
+
+delete from feed_sources;
+
+insert into feed_sources(id, name) values(1,'CM Trade');
+insert into feed_sources(id, name) values(2,'CM Agency');
+insert into feed_sources(id, name) values(3,'CM Direct');
+insert into feed_sources(id, name) values(4,'CM Mobile');
+insert into feed_sources(id, name) values(5,'CM PS');
+insert into feed_sources(id, name) values(6,'CM PS DNS');
+insert into feed_sources(id, name) values(7,'CM PS Switch Digital');
+insert into feed_sources(id, name) values(8,'CM PS We Love Network');
+insert into feed_sources(id, name) values(9,'Publishers');
+insert into feed_sources(id, name) values(10,'Echo Sign');
+insert into feed_sources(id, name) values(11,'HighRise');
+insert into feed_sources(id, name) values(12,'To Do – Matt');
+insert into feed_sources(id, name) values(13,'To Do – JD');
+insert into feed_sources(id, name) values(14,'To Do – JD');
+insert into feed_sources(id, name) values(15,'Bugs');
+insert into feed_sources(id, name,colour) values(15,'Bugs','#F2CB95');
+
+delete from feed_entries;
+delete from feed_entries_attachments;
+delete from feed_entry_child;
+delete from file_attachments;
+
+
+
+21 Sept 2012 
+
+
+CREATE TABLE `feeds` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `colour` varchar(255) DEFAULT NULL,
+  `source_type` tinyint NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `feed_types` (
+  `id` tinyint NOT NULL,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+insert into feed_types(id,name)values(1,'rss');
+insert into feed_types(id,name)values(2,'custom');
+insert into feed_types(id,name)values(3,'auto');
+
+
+alter table feed_sources add `token` varchar(255) DEFAULT NULL;
+
+update feed_sources set url='https://jemm.highrisehq.com/recordings.atom',
+token = 'ced4177793bea85a08a1d094ee49a903' where id = 11;
+
+update feed_sources set url='http://rss.echosign.com/rss?v=PR1:dT05MDg0MjMm:-CmUzUqRUZpSJXbECOydQcqA_jVBoI13gNUz2kf_4WE&feedType=rss_2.0' where id = 10;
+
+
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (100 ,'Highrise', 'feeds@jemmgroup.com', 'pass','','',1);
+
+insert into users (id, username,email,crypted_password,password_salt,persistence_token,region_id)
+values (101 ,'EchoSign', 'feeds@jemmgroup.com', 'pass','','',1);
+
+27- sept 2012
+
+insert into status values(4,'Live - Pending');
+update status set name = 'Live - OnIt' where id = 3;
+update status set name = 'Live - Urgent' where id = 1;
+
+update status set name = 'Live - OnIt' where id = 2;
+update status set name = 'Live - Pending' where id = 3;
+update status set name = 'Done' where id = 4;
+
+
+alter table feed_entries modify feed_source_id bigInt Not null;
+alter table feed_entries modify user_id bigInt Not null;
+
+
+
+For prodcution database
+
+
+//Alter table users add job_title varchar(255) after region_id
+//drop index index_feed_entries_on_published_at_and_feed_source_id_and_status On feed_entries;
+//drop index index_feed_entries_on_published_at On feed_entries;
+//drop index index_feed_entries_on_published_at_and_feed_source_id On feed_entries;
+
+//Create index index_feed_entries_on_assign_to on feed_entries (assign_to) 
+
+//Create index index_feed_entries_on_assign_to on feed_entries (assign_to) 
+//Create index index_feed_entries_on_assign_to_feed_source_id on feed_entries (feed_source_id,assign_to) 
+
+//Create index index_feed_entries_on_status_feed_source_id on feed_entries (feed_source_id,status)
+
+//Create index index_feed_entries_on_status_feed_source_id_assign_to on feed_entries (feed_source_id,status,assign_to)
+
+//Create index index_feed_entries_on_status_feed_source_id_user_id on feed_entries (user_id,feed_source_id,status)
+
+//Create index index_feed_entries_on_st_source_id_user_id_created_at_assign_to on feed_entries (user_id,feed_source_id,status,created_at,assign_to)
+
+//Create index index_feed_id_parent_id on feed_entry_child(parent_id, feed_id);
+
+drop index index_feed_entries_on_st_s_id_u_id_cd_at_assign_to_deadline on feed_entries; bad
+drop index index_feed_entries_on_st_source_id_user_id_created_at_assign_to on feed_entries;
+drop index index_feed_entries_on_published_at on feed_entries;
+drop index index_feed_entries_on_published_at_and_feed_source_id_and_status on feed_entries; bad
+drop index index_feed_entries_on_status on feed_entries;
+drop index index_feed_entries_on_user_id on feed_entries;bad
+drop index index_feed_entries_on_feed_source_id on feed_entries;
+
+//alter table users add primary key(id);
+
+//SHOW INDEXES FROM feed_entry_child
+
+
+
+Alter table users add job_title varchar(255) after region_id;
+
+update users SET crypted_password = 'b5cef2407c4a00bf5fc288b925f35065d3b632733d4c8d21a38bfae88c5c9a5bffaef493185235e7fe8bbf47f487c12bf83fe50f7e9d731727d52a1db6af37d1', password_salt = 'VZGugcS5DkhEbfa5a809', persistence_token = '5936e164508f8c0b41862750c6cd94e24f34b93087b7cc8c7edaaf67fb0b7b5cc16e19fd7bb2efa3690a309bc691275ab74874a338abcf3091032981e08205ee' where id=190; 
+
+22Oct 2012
+
+alter table users add profileImage varchar(255) after email;
+
+
+29Oct2012
+
+
+select * from users u inner join roles_users ru on u.id = ru.user_id join roles r on ru.user_id = r.id where username =  #{username}  
+
+ALTER TABLE users ENGINE = MyISAM;
+ALTER TABLE users MODIFY id bigint NOT NULL AUTO_INCREMENT;
+ALTER TABLE users AUTO_INCREMENT = 102;
+ALTER TABLE users ENGINE = InnoDB;
+
+delete from roles_users where user_id > 1;
+
+delete from roles_users where role_id=5;
+
+delete from roles;
+
+truncate table roles;
+
+ALTER TABLE roles AUTO_INCREMENT=1;
+
+insert into roles(name) values ('Super Administrator');
+insert into roles(name) values ('Administrator');
+insert into roles(name) values ('Operations');
+insert into roles(name) values ('Publisher');
+insert into roles(name) values ('Sales Director');
+insert into roles(name) values ('Sales');
+insert into roles(name) values ('Mobile Manager');
+insert into roles(name) values ('PS Manager');
+
+
+truncate table announcements;
+ALTER TABLE announcements ADD CONSTRAINT announcements PRIMARY KEY (id);
+ALTER TABLE announcements MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT;
+
+
+
+ALTER TABLE roles_users ADD PRIMARY KEY (user_id);
+
+insert into roles_users set user_id=21,role_id=1, created_at=now(), updated_at=now(); 
+
+select * from users u inner join roles_users ru on u.id = ru.user_id join roles r on ru.user_id = r.id where username
+
+
+7Nov 2012
+
+update feed_sources set colour = '#ffd200' where id=1;
+update feed_sources set colour = '#ff0000' where id=2;
+update feed_sources set colour = '#b400ff' where id=3;
+update feed_sources set colour = '#ffa3fc' where id=4;
+update feed_sources set colour = '#00ccff' where id=5;
+update feed_sources set colour = '#00ff30' where id=6;
+update feed_sources set colour = '#f000ff' where id=7;
+update feed_sources set colour = '#26e14e' where id=8;
+update feed_sources set colour = '#7c761a' where id=9;
+update feed_sources set colour = '#803d5b' where id=10;
+update feed_sources set colour = '#ff006c' where id=11;
+update feed_sources set colour = '#83c2f3' where id=12;
+update feed_sources set colour = '#666666' where id=13;
+update feed_sources set colour = '#468b31' where id=14;
+update feed_sources set colour = '#6fc038' where id=15;
+
+
+ALTER TABLE users ADD (user_logged_in TINYINT DEFAULT '0');
+
+CREATE TABLE
+    feeds_users
+    (
+        user_id INT,
+        cat_id INT,
+        PRIMARY KEY (user_id, cat_id),
+        CONSTRAINT feeds_users_ix1 UNIQUE (user_id, cat_id)
+    )
+    ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE feed_entries ADD (last_view_date DATETIME);
+
+ALTER TABLE feed_entries ADD (deadline DATE);
+
+ALTER TABLE feed_entries ADD (follower int);
+
+ALTER TABLE feed_entries ADD (urgent_status Boolean Default false);
+
+update feed_sources set name = 'CM PS We Love NW' where id = 8;
+
+ALTER TABLE feed_entries ADD (viewer int default '0');
+
+
+5th Dec 2012
+
+update status set name = 'Urgent' where id=1;
+update status set name = 'On It' where id=2;
+update status set name = 'Pending' where id=3;
+update status set name = 'Done' where id=4;
+
+
+2nd Jan 2013
+
+alter table feed_sources_users add primary key(feed_source_id,user_id);
+
+alter table feed_sources add primary key(id);
+
+
+ALTER TABLE feed_sources ENGINE = MyISAM;
+ALTER TABLE feed_sources MODIFY id bigint NOT NULL AUTO_INCREMENT;
+//check before running this 
+ALTER TABLE feed_sources AUTO_INCREMENT = 17;
+ALTER TABLE feed_sources ENGINE = InnoDB;
+
+
+Alter table feed_entries modify column deadline datetime;
+
+
+15Jan2013
+
+//check if previous date script run on other servers like funbox or demo 
+
+update feed_sources set source_type='1' where id in(10,11);
+
+update feed_sources set source_type='0' where id not in(10,11);
+
+ALTER TABLE feed_sources Modify column source_type INT DEFAULT '0';
+
+ALTER TABLE users ADD (user_type bigint DEFAULT '0');
+
+update users set user_type=11  where id = 100;
+
+update users set user_type=10  where id = 101;
+
+ALTER TABLE feed_entries add (feed_type int DEFAULT '0');
+
+update feed_entries set feed_type = 1 where feed_source_id in(10,11);
+
+
+24Jan2013
+
+CREATE TABLE `groups` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `created_by` varchar(255) DEFAULT NULL,
+  `updated_by` varchar(255) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+Alter table users add(group_id bigint);
+
+
+create index email_on_region_id on users(email,region_id); 
+create index email_on_region_id_group_id on users(email,region_id,group_id); 
+create index email_on_user_type on users(email,user_type); 
+
+
+Create index index_feed_entries_on_st_s_id_u_id_cd_at_assign_to_deadline on feed_entries (user_id,feed_source_id,status,created_at,assign_to,deadline);
+
+Create index index_feed_entries_on_st_s_id_u_id_cd_at_a_to_deadline_follower on feed_entries (user_id,feed_source_id,status,created_at,assign_to,deadline,follower);
+
+
+ALTER TABLE regions ENGINE = MyISAM;
+ALTER TABLE regions MODIFY id bigint NOT NULL AUTO_INCREMENT;
+ALTER TABLE regions AUTO_INCREMENT = 6;
+ALTER TABLE regions ENGINE = InnoDB;
+
+ALTER TABLE users MODIFY region_id bigint;
+
+alter table users modify username varchar(255) default null; 
+alter table roles_users modify user_id bigInt; 
+alter table regions add group_id bigInt;
+
+update groups set name='Jemm Group' ;
+
+update users set group_id=1;
+
+update regions set group_id = 1 where id < 6;
+
+alter table feed_sources add group_id bigInt;
+
+update feed_sources set group_id = 1;
+
+alter table announcements add group_id bigInt;
+
+update announcements set group_id=1 ;
+
+alter table announcements modify id bigInt;
+
+update roles set name = 'User' where id=3;
+
+delete from roles where id > 3;
+
+update roles_users set role_id=3 where role_id>3;
+
+
+13th Feb 2012
+
+drop index index_feed_entries_on_st_s_id_u_id_cd_at_a_to_deadline_follower on feed_entries;
+
+
+alter table feed_sources add parent_id bigint default null
+
+alter table feed_entries add updated_by bigint;
+
+update feed_entries set updated_by=assign_to;
+
+
+26Feb 2013
+
+CREATE TABLE `packages_pricing` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `package_name` varchar(255) DEFAULT NULL,
+  price int(11) DEFAULT '0',
+  users_allowed int(11) DEFAULT '0',
+  storage_allowed int(11) DEFAULT '0',
+  support_type int(11) DEFAULT '0',
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+alter table groups add package_id bigint default '0';
+
+
+CREATE TABLE `packages_platinum` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `group_id` bigint(20) NOT NULL,
+  users_allowed int(11) DEFAULT '0',
+  storage_allowed int(11) DEFAULT '0',
+  support_type int(11) DEFAULT '0',
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `packages_support` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `support_desc` varchar(255) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+insert into packages_pricing set package_name='Free', 
+users_allowed=2, 
+storage_allowed=2,support_type=1,
+created_at=Now(),updated_at=Now();
+
+insert into packages_pricing set package_name='Silver', price=100, users_allowed=10, 
+storage_allowed=10,support_type=1,
+ created_at=Now(),updated_at=Now(); 
+
+insert into packages_pricing set package_name='Silver', price=185, users_allowed=25, 
+storage_allowed=25,support_type=2,
+ created_at=Now(),updated_at=Now(); 
+
+insert into packages_pricing set package_name='Gold', price=185, users_allowed=50, 
+storage_allowed=50,support_type=2,
+ created_at=Now(),updated_at=Now(); 
+
+insert into packages_pricing set package_name='Platinum', 
+storage_allowed=50,support_type=3,
+ created_at=Now(),updated_at=Now(); 
+
+
+insert into packages_support set support_desc='Email,phone and webinar training support',
+ created_at=Now(),updated_at=Now();
+
+insert into packages_support set support_desc='Community support and email support',
+ created_at=Now(),updated_at=Now(); 
+
+insert into packages_support set support_desc='Priority email,phone and training support',
+ created_at=Now(),updated_at=Now(); 
+
+
+
+CREATE TABLE `orders` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `amount` varchar(20) NOT NULL,
+  `item_name` varchar(255) NOT NULL,
+  `item_number` varchar(10),
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  `payer_email` varchar(255) NOT NULL,
+  `payer_id` varchar(50) NOT NULL,
+  `payer_status` varchar(50) NOT NULL,
+  `period` varchar(25),
+  `subscr_date` datetime ,
+  `subscr_id` varchar(50),
+  `txn_type` varchar(50),
+  `auth` varchar(255)NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+alter table orders add group_id bigint NOT NULL;
+
+alter table groups add subscr_date datetime;
+
+ALTER TABLE orders AUTO_INCREMENT = 1001;
+
+
+alter table groups modify package_id bigint default '1';
+
+update groups set package_id=1 where package_id=0;
+
+
+18 March 2013
+
+update groups set subscr_date = now() where id =1;
+
+CREATE TABLE
+    regions_announcements
+    (
+        region_id Bigint,
+        announcement_id Bigint,
+        PRIMARY KEY (region_id, announcement_id),
+        CONSTRAINT regions_announcements_ix1 UNIQUE (region_id, announcement_id)
+    )
+    ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+ALTER TABLE announcements ENGINE = MyISAM;
+ALTER TABLE announcements MODIFY id bigint NOT NULL AUTO_INCREMENT;
+ALTER TABLE announcements AUTO_INCREMENT = 14;
+ALTER TABLE announcements ENGINE = InnoDB;
+
+
+3rd April
+
+Alter table users add column task_add_email boolean default true;  
+Alter table users add column task_update_email boolean default true; 
+
+
+9th April
+
+CREATE TABLE IF NOT EXISTS `persistent_logins` (
+  `username` VARCHAR(64) DEFAULT NULL,
+  `series` VARCHAR(64) NOT NULL DEFAULT '',
+  `token` VARCHAR(64) DEFAULT NULL,
+  `last_used` datetime DEFAULT NULL,
+  PRIMARY KEY (`series`)
+  
+  
+  
+  22 May 2013
+  
+  Alter table feed_sources_users modify user_id bigInt;
+  
+  30 May 2013
+  
+  Alter table orders add transection_id varchar(255) after id; 
+  
+  //DONE
+  
+  6 June 2013
+  
+  alter table feed_entries add parent_feed boolean default false after feed_source_id; 
+  
+create table temp_feed_ids as select fe.id from feed_entries fe 
+left join feed_entry_child fec on fe.id = fec.feed_id 
+where fec.feed_id is null;
+
+update feed_entries set parent_feed = 1 where id in( 
+select id from temp_feed_ids);
+
+truncate table temp_feed_ids;
+
+
+Create index index_feed_source_id on feed_entries (feed_source_id);
+Create index index_feed_type on feed_entries (feed_type);
+Create index index_created_at on feed_entries (created_at);
+Create index index_status on feed_entries (status);
+Create index index_user_id on feed_entries (user_id);
+
+
+drop index index_feed_entries_on_st_s_id_u_id_cd_at_assign_to_deadline on feed_entries; 
+drop index index_feed_entries_on_st_source_id_user_id_created_at_assign_to on feed_entries;
+drop index index_feed_entries_on_published_at on feed_entries;
+drop index index_feed_entries_on_published_at_and_feed_source_id_and_status on feed_entries; 
+drop index index_feed_entries_on_status on feed_entries;
+drop index index_feed_entries_on_user_id on feed_entries;
+drop index index_feed_entries_on_feed_source_id on feed_entries;
+drop index index_feed_entries_on_published_at_and_feed_source_id on feed_entries;
+
+
+
+2nd July 2013
+alter table feed_sources_users modify column feed_source_id bigint;
+create table temp_feed_sources_id as select feed_source_id from feed_sources_users where feed_source_id not in(select id from feed_sources);
+delete from feed_sources_users where feed_source_id in(select feed_source_id from temp_feed_sources_id);
+alter table feed_sources_users add constraint fk_feed_sources foreign key(feed_source_id) references feed_sources (id) on delete cascade;   
+truncate temp_feed_sources_id;
+drop table temp_feed_ids;
+drop table temp_feed_sources_id;
+
+create table temp_deleted_feed_ids as select parent_id from feed_entry_child where parent_id not in(select id from feed_entries where feed_type=0)
+
+select * from feed_entries where id in (7135,7364,7435,8108, 10753,11179,12799,30199,45910)
+
+delete from feed_entry_child where parent_id in (select parent_id from temp_deleted_feed_ids);
+
+alter table feed_entry_child add constraint fk_feed_entries foreign key(parent_id) references feed_entries (id) on delete cascade 
+
+truncate temp_deleted_feed_ids;
+drop table temp_deleted_feed_ids;
+
+
+create table attachment_deleted_id as select feed_entry_id from feed_entries_attachments where feed_entry_id not in(select id from feed_entries where feed_type=0);
+
+//select * from feed_entries where id in (select feed_entry_id from attachment_deleted_id)
+
+delete from feed_entries_attachments where feed_entry_id in (select feed_entry_id from attachment_deleted_id);
+
+alter table feed_entries_attachments add constraint fk_feed_entries_attachment foreign key(feed_entry_id) references feed_entries (id) on delete cascade 
+
+truncate attachment_deleted_id;
+drop table attachment_deleted_id;
+
+
+
+July 15 2013 ---- Not updated on Live organise
+
+
+CREATE TABLE followers (
+  follower_id bigint DEFAULT NULL,
+  feed_entry_id bigint DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  primary key (feed_entry_id,follower_id),
+  foreign key(feed_entry_id) 
+  references feed_entries (id) on delete cascade 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+July 29 2013
+
+CREATE TABLE view_type (
+  user_id bigint NOT NULL,
+  view_type tinyint DEFAULT '0',
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL,
+  primary key (user_id),
+  foreign key(user_id) 
+  references users(id) on delete cascade 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+update roles set id=5 where id=4;
+
+update roles set id=4 where id=3;
+
+update roles set id=3 where id=2;
+
+update roles set id=2 where id=1;
+
+insert into roles(id,name)values(1,'Jemm Super Admin'); 
+
+update roles_users set role_id = 4 where role_id=3;
+update roles_users set role_id = 3 where role_id=2; 
+update roles_users set role_id = 2 where role_id=1; 
+
+update roles_users set role_id=1 where user_id=21;
+
+CREATE TABLE dept (
+  id bigint NOT NULL AUTO_INCREMENT,
+  name bigint DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL,
+  primary key (id)) ENGINE=InnoDB DEFAULT CHARSET=utf8;  
+
+
+
+--------Till here done on public version organise -------------------------
+    
+CREATE TABLE dept_users (
+	user_id bigint DEFAULT '0' NOT NULL, 
+	dept_id bigint DEFAULT '0' NOT NULL, 
+	created_at datetime, 
+	updated_at datetime, 
+	PRIMARY KEY (user_id, dept_id), 
+	INDEX dept_id (dept_id)) 
+ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE dept_users ADD FOREIGN KEY (dept_id) REFERENCES dept (id) ON DELETE CASCADE;
+
+ALTER TABLE dept ADD group_id BIGINT after name; 
+
+ALTER TABLE dept MODIFY COLUMN name VARCHAR(255);
+
+Alter table feed_entries add column assign_to_dept bigint default '0' after assign_to;
+
+CREATE TABLE highrise_users (
+  id bigint NOT NULL AUTO_INCREMENT,
+  user_id bigint NOT NULL,
+  name varchar(255) DEFAULT NULL,
+  email varchar(255) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL,
+  primary key (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE highrise_deals (
+  id bigint NOT NULL AUTO_INCREMENT,
+  deal_id bigint NOT NULL, 
+  account_id bigint DEFAULT '0',
+  author_id bigint DEFAULT '0',
+  background text DEFAULT NULL,
+  category_id bigint DEFAULT '0',
+  currency varchar(20) DEFAULT NULL,
+  duration varchar(20) DEFAULT NULL,
+  name varchar(255) DEFAULT NULL,
+  party_id bigint DEFAULT '0',
+  price int DEFAULT '0',
+  price_type varchar(100) DEFAULT NULL,
+  responsible_party_id bigint DEFAULT '0',
+  status varchar(100) DEFAULT NULL,
+  status_changed_on varchar(100) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL,
+  primary key (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE highrise_party (
+  id bigint NOT NULL AUTO_INCREMENT,
+  party_id bigint NOT NULL,
+  name varchar(255) DEFAULT NULL, 
+  background text DEFAULT NULL,
+  avatar_url varchar(255) DEFAULT NULL,
+  type varchar(255) DEFAULT NULL,
+  created_at datetime DEFAULT NULL,
+  updated_at datetime DEFAULT NULL,
+  primary key (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+

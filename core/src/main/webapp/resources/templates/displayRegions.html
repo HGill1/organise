@@ -1,0 +1,9 @@
+{{#each this}}
+<tr>
+	<td class="regionName">{{regionName}}</td>
+	<td class="region-edit-btns" data-control="region-edit-del"><input
+		type="hidden" name='region-id' id="region-id" class='region-id'
+		value="{{id}}" /> <a href="#" data-control="regionEdit">Edit</a><a
+		href="#" data-control="delRegion">Delete</a></td>
+</tr>
+{{/each}}

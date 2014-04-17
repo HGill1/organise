@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+  <classPathEntry location="/home/hgill/JemmMedia/workspace1/journal2/WebContent/WEB-INF/lib/mysql-connector-java-5.1.18-bin.jar" />
+  
+  <context id="MySqlTables" targetRuntime="MyBatis3">
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        connectionURL="jdbc:mysql://localhost/organisedev"
+        userId="root"
+        password="root">
+    </jdbcConnection>
+
+    <javaTypeResolver >
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+
+    <javaModelGenerator targetPackage="com.jemmmedia.organise.service.impl.db.mybatis.model" targetProject="journal2/src">
+      <property name="enableSubPackages" value="true" />
+      <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+
+    <sqlMapGenerator targetPackage="com.jemmmedia.organise.service.impl.db.mybatis.dao"  targetProject="journal2/src">
+      <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.jemmmedia.organise.service.impl.db.mybatis.dao"  targetProject="journal2/src">
+      <property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+
+	<!-- TABLES -->    
+	
+    <!--  <table  tableName="announcements" domainObjectName="Announcements" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table> -->
+    
+     <!--
+     <table  tableName="regions_announcements" domainObjectName="RegionsAnnouncements" modelType="conditional">
+           <property name="useActualColumnNames" value="false"/>
+     </table>-->
+   
+      <table  tableName="feed_entries" domainObjectName="FeedEntry" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table>     
+     <!--  <table  tableName="feed_sources" domainObjectName="FeedSource" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table> -->    
+    
+   <!--  <table  tableName="feed_sources_users" domainObjectName="FeedSources_Users" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+    </table> --> 
+    
+     <!--<table  tableName="file_attachments" domainObjectName="FileAttachment" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table>  -->
+    
+    <!-- <table  tableName="notes" domainObjectName="Note" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table>-->
+    
+      <!--  <table  tableName="users" domainObjectName="User" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table> -->   
+     
+    <!--<table  tableName="feed_entries_attachments" domainObjectName="FeedEntriesAttachments" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+    </table> -->
+     
+   <!--  <table  tableName="status" domainObjectName="Status" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+    </table>  -->
+    
+    <!-- <table  tableName="feed_entry_child" domainObjectName="FeedEntryWithChild" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+    </table> -->
+    
+   <!--  <table  tableName="roles" domainObjectName="Roles" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table> -->
+    
+   <!--  <table  tableName="roles_users" domainObjectName="RolesUsers" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+    </table> -->
+   <!--  
+    <table  tableName="roles_users" domainObjectName="UsersWithRoles" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+    </table> -->
+    <!-- <table  tableName="feeds" domainObjectName="Feeds" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table> -->
+   <!--  <table  tableName="feed_types" domainObjectName="FeedTypes" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+    </table>  -->
+    <!--  <table  tableName="regions" domainObjectName="Regions" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table> -->   
+   <!--  <table  tableName="feeds_users" domainObjectName="FeedsUsers" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+    </table> -->
+    
+   <!-- <table  tableName="groups" domainObjectName="Groups" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table> -->
+    
+    <!-- <table  tableName="orders" domainObjectName="Orders" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table> -->
+    
+     <!-- <table  tableName="packages_pricing" domainObjectName="PackagesPricing" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table>
+    
+    <table  tableName="packages_support" domainObjectName="PackagesSupport" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table>
+    
+    <table  tableName="packages_platinum" domainObjectName="PackagesPlatinum" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table> -->
+    
+    <!-- <table  tableName="followers" domainObjectName="Followers" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+    </table>
+     -->
+    <!-- <table  tableName="view_type" domainObjectName="ViewType" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+    </table> -->
+    <!--  <table  tableName="dept" domainObjectName="Dept" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table>  -->
+     <!--  <table  tableName="dept_users" domainObjectName="DeptUsers" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+    </table>  -->
+    
+    <table  tableName="highrise_deals" domainObjectName="HighriseDeals" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table  tableName="highrise_party" domainObjectName="HighriseParty" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table  tableName="highrise_users" domainObjectName="HighriseUsers" modelType="conditional">
+      <property name="useActualColumnNames" value="false"/>
+      <property name="rootClass" value="com.jemmmedia.organise.service.impl.db.mybatis.model.BaseModel"/>
+      <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    </table>
+   
+  </context>
+</generatorConfiguration>
